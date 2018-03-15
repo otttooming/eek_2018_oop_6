@@ -8,6 +8,8 @@ namespace eek_2018_oop_6
 
     class Program
     {
+        public static event tootmisprotsess syndmusedProts;
+
         static List<tootmisprotsess> tootmisprotsessid = new List<tootmisprotsess>();
 
         public static void FR() { Console.WriteLine("Teostamisel on freesimine"); }
@@ -33,10 +35,23 @@ namespace eek_2018_oop_6
             tootmisprotsessid.Add(prKK);
             tootmisprotsessid.Add(prTE);
 
+            // Lisame kontrolli ka vahepeale
+            tootmisprotsessid.Insert(1, prKK);
+
+            Console.WriteLine("\nLisatud taiendavad kvaliteedi kontrollid");
             foreach(tootmisprotsess x in tootmisprotsessid)
             {
                 x();
             }
+
+            Console.WriteLine("\nSarnane too syndmuste abil");
+            syndmusedProts += prFR;
+            syndmusedProts += prLI;
+            syndmusedProts += prVA;
+            syndmusedProts += prKK;
+            syndmusedProts += prTE;
+
+            syndmusedProts();
 
             Console.Read();
         }
