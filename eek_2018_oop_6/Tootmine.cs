@@ -6,7 +6,7 @@ namespace eek_2018_oop_6
 {
     class Tootmine
     {
-        Hashtable tooted = new Hashtable();
+        public Hashtable tooted = new Hashtable();
 
         public Toode this[string nimi]
         {

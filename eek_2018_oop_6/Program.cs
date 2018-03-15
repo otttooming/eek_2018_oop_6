@@ -75,6 +75,12 @@ namespace eek_2018_oop_6
 
             Console.WriteLine("{0}", Tootmisobjektid["arvuti"]);
 
+            // Iterate over Hashtable
+            foreach (System.Collections.DictionaryEntry ttt in Tootmisobjektid.tooted)
+            {
+                Console.WriteLine("{0} {1}", ttt.Key, ttt.Value);
+            }
+
             Console.Read();
         }
     }
