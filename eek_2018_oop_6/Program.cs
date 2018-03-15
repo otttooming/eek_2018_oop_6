@@ -53,6 +53,14 @@ namespace eek_2018_oop_6
 
             syndmusedProts();
 
+            Console.WriteLine("\n Indekseerimine - Fionacci arvude naide");
+
+            Fibonacci f = new Fibonacci();
+            for (int i = 0; i < 51; i++)
+            {
+                Console.WriteLine("{0,2} {1,15}",i,f[i]);
+            }
+
             Console.Read();
         }
     }
