@@ -61,6 +61,20 @@ namespace eek_2018_oop_6
                 Console.WriteLine("{0,2} {1,15}",i,f[i]);
             }
 
+            // Hashtable (paaride hulk voti ja vaartus)
+            Console.WriteLine("\n Hashtable (paaride hulk voti ja vaartus)");
+            Toode telefon = new Toode("Phone", 123);
+            Console.WriteLine("{0}", telefon);
+
+            Tootmine Tootmisobjektid = new Tootmine();
+            Tootmisobjektid["telefon"] = telefon;
+            Tootmisobjektid["telefon2"] = new Toode("Samsung", 659);
+            Tootmisobjektid["arvuti"] = new Toode("Palo alto", 45);
+            Tootmisobjektid["telex"] = new Toode("France", 59);
+            Tootmisobjektid["usenet"] = new Toode("Compuserve", 987);
+
+            Console.WriteLine("{0}", Tootmisobjektid["arvuti"]);
+
             Console.Read();
         }
     }
